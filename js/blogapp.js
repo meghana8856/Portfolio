@@ -64,17 +64,7 @@ gql(GET_USER_ARTICLES, { page: 0 })
             // brief.classList.add('col-lg-6', 'col-md-12');
             
             
-            let parentLink = document.createElement('a');
-            parentLink.href = `https://blog.nayandas.dev/${article.slug}`;
-            parentLink.target='_blank';
-            parentLink.classList.add('link')
-            
-            let link = document.createElement('a');
-            link.href = `https://blog.nayandas.dev/${article.slug}`;
-            link.target='_blank';
-            link.classList.add('blog-link');
-            link.innerText = 'Read more';
-            
+
             container.appendChild(parentLink);
             parentLink.appendChild(parentcontainer)
             parentcontainer.appendChild(childcontainer);
